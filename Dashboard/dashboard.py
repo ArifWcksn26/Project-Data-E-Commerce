@@ -58,8 +58,8 @@ def create_rfm_df(df):
     return rfm_df
 
 
-customers_df = pd.read_csv("customer_order.csv")
-seller_product_df = pd.read_csv("seller_product.csv")
+customers_df = pd.read_csv("Dashboard/customer_order.csv")
+seller_product_df = pd.read_csv("Dashboard/seller_product.csv")
 
 datetime_columns = ["order_purchase_timestamp", "order_estimated_delivery_date"]
 customers_df.sort_values(by="order_purchase_timestamp", inplace=True)
