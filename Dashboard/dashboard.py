@@ -73,6 +73,14 @@ max_date = customers_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
     # Menambahkan logo perusahaan
+    import os
+
+file_path = "logo.png"
+
+if os.path.exists(file_path):
+    st.image(file_path, caption="Logo Perusahaan", use_column_width=True)
+else:
+    st.error("File tidak ditemukan: {}".format(file_path))
     st.image("logo.png")
     
     # Mengambil start_date & end_date dari date_input
