@@ -75,13 +75,13 @@ with st.sidebar:
     # Menambahkan logo perusahaan
     import os
 
-file_path = "logo.png"
+file_path = "Logo.png"
 
 if os.path.exists(file_path):
     st.image(file_path, caption="Logo Perusahaan", use_column_width=True)
 else:
     st.error("File tidak ditemukan: {}".format(file_path))
-    st.image("logo.png")
+    st.image("Logo.png")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
