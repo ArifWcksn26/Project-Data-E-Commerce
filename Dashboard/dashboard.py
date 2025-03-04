@@ -72,12 +72,20 @@ for column in datetime_columns:
 max_date = customers_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
-    # Menambahkan logo perusahaan
-    st.image("https://github.com/ArifWcksn26/Project-Data-E-Commerce/blob/main/Logo.png")
+    # Menambahkan teks sebagai logo
+    st.markdown("<h2 style='text-align: center;'>Arif Wicaksono</h2>", unsafe_allow_html=True)
+    
+    # Menambahkan informasi tambahan
+    st.markdown("### Informasi")
+    st.markdown("**Role:** Data Scientist")
+    st.markdown("**Email:** arifwicaksono947@gmail.com")
+    st.markdown("**Deskripsi:**")
+    st.markdown("Merupakan seorang Data Scientist dengan pengalaman dalam analisis data dan machine learning.")
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
-        label='Rentang Waktu',min_value=min_date,
+        label='Rentang Waktu',
+        min_value=min_date,
         max_value=max_date,
         value=[min_date, max_date]
     )
