@@ -74,13 +74,15 @@ max_date = customers_df["order_purchase_timestamp"].max()
 with st.sidebar:
     # Menambahkan teks sebagai logo
     st.markdown("<h2 style='text-align: center;'>Arif Wicaksono</h2>", unsafe_allow_html=True)
-    
+
     # Menambahkan informasi tambahan
-    st.markdown("### Informasi")
-    st.markdown("**Role:** Data Scientist")
+    st.markdown("### Profil")
+    st.markdown("**Role:** Mahasiswa Sistem Informasi")
+    st.markdown("**Fokus:** Pengembangan Web & Data")
     st.markdown("**Email:** arifwicaksono947@gmail.com")
-    st.markdown("**Deskripsi:**")
-    st.markdown("Merupakan seorang Data Scientist dengan pengalaman dalam analisis data dan machine learning.")
+    st.markdown("**Tentang Saya:**")
+    st.markdown("Sedang menempuh pendidikan di bidang Sistem Informasi dan aktif mengembangkan aplikasi web berbasis Laravel dan React. Memiliki minat dalam bidang teknologi, analisis data, serta UI/UX.")
+
     
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
